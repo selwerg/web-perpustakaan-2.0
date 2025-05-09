@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Perpustakaan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Manajemen Buku Perpustakaan</h1>
+
+    <form id="formBuku">
+      <input type="hidden" id="indexEdit" value="">
+      <input type="text" id="judul" placeholder="Judul Buku" required>
+      <input type="text" id="penulis" placeholder="Penulis" required>
+      <input type="number" id="tahun" placeholder="Tahun Terbit" required>
+      <button type="submit">Simpan</button>
+    </form>
+
+    <h2>Daftar Buku</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Judul</th>
+          <th>Penulis</th>
+          <th>Tahun</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="daftarBuku"></tbody>
+    </table>
+  </div>
+  <footer>
+  <p>Dibuat oleh Ray © 2025</p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
